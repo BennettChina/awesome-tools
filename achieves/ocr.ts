@@ -35,7 +35,8 @@ export default defineDirective( "order", async ( { sendMessage, messageData, log
 	
 	const url = recMessage[0].data.url;
 	try {
-		await decodeQrCode( url );
+		const data = await decodeQrCode( url );
+		await sendMessage( `识别结果：\n${ data.join( "\n\n" ) }` );
 	} catch ( error ) {
 		logger.error( error );
 		await sendMessage( "识别失败，请尝试重新发送图片。" );
