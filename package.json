@@ -1,6 +1,6 @@
 {
   "name" : "awesome-tools",
-  "version" : "1.0.0",
+  "version" : "1.1.0",
   "description" : "adachi-bot的一些好用的小工具插件",
   "main" : "init.ts",
   "scripts" : {
@@ -10,5 +10,9 @@
     "type" : "git",
     "url" : "https://github.com/BennettChina/awesome-tools.git"
   },
-  "private" : true
+  "private" : true,
+  "author" : "BennettChina",
+  "license" : "MIT",
+  "dependencies" : {
+  }
 }
